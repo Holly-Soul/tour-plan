@@ -3,5 +3,7 @@ $(document).ready(function () {
     fade: true,
     cssEase: "linear",
     autoplay: true,
+    adaptiveHeight: true,
+    infinite: true,
   });
 });
