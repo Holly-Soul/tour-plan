@@ -601,6 +601,59 @@ template {
   margin-left: -4px;
 }
 
+.slider {
+  position: relative;
+  left: 0;
+  width: 728px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.slider-item {
+  width: 728px;
+  height: 450px;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  z-index: 1001;
+  font-size: 0;
+  border: none;
+  bottom: 0;
+  outline: none;
+}
+
+.slider .slick-arrow.slick-prev {
+  left: 16px;
+  top: 213px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/arrow-left.svg") 0 0 no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+  right: 16px;
+  top: 213px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/arrow-right.svg") 0 0 no-repeat;
+}
+
+.slider .slick-list {
+  overflow: hidden;
+}
+
+.slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider .slick-slide {
+  border: none;
+  outline: none;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;

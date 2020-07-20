@@ -55,3 +55,39 @@
       line-height: 13px
       margin-left: -4px
 
+.slider 
+  position: relative
+  left: 0
+  width: 728px
+  margin-top: 20px
+  border-radius: 8px
+  &-item
+    width: 728px
+    height: 450px 
+  & .slick
+    &-arrow 
+      position: absolute
+      z-index: 1001
+      font-size: 0
+      border: none
+      bottom: 0
+      outline: none
+      &.slick-prev 
+        left: 16px
+        top: 213px
+        width: 30px
+        height: 30px
+        background: url("../img/arrow-left.svg") 0 0 no-repeat
+      &.slick-next 
+        right: 16px
+        top: 213px
+        width: 30px
+        height: 30px
+        background: url("../img/arrow-right.svg") 0 0 no-repeat
+    &-list 
+      overflow: hidden
+    &-track 
+      display: flex
+    &-slide 
+      border: none
+      outline: none
