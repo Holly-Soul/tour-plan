@@ -7,3 +7,8 @@ $(document).ready(function () {
     infinite: true,
   });
 });
+$(document).ready(function () {
+  $(".reviews-slider").slick({
+    autoplay: true,
+  });
+});
