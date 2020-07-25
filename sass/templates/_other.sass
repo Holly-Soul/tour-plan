@@ -1,0 +1,123 @@
+.other 
+  padding-bottom: 70px
+  &__title
+    color: $dark
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 65px
+  &-grid
+    display: grid
+    grid-template-columns: repeat(3,350px)
+    grid-template-rows: 500px 500px
+    grid-column-gap: 30px
+    grid-row-gap: 30px
+    &__card
+      display: flex
+      flex-direction: column
+      &:first-child
+        display: flex
+        flex-direction: row
+        grid-column-start: 1
+        grid-column-end: 3
+.grid-card
+  position: relative
+  &:first-child
+    .grid-card
+      &__flash-offer
+        position: absolute
+        left: 0
+        top: 34px
+        color: $light
+        background: $primary
+        padding: 8px 11px
+        font-weight: 600
+        font-size: 12px
+        line-height: 15px
+        border-radius: 0px 4px 4px 0px
+      &__image
+        width: 366px
+        height: 100%
+        object-fit: cover
+        border-radius: 8px 0px 0px 8px
+      &__about
+        padding: 46px 21px 30px 44px
+        border-radius: 0px 8px 8px 0px
+      &__text
+        font-size: 14px
+        line-height: 160.6%
+        margin: 34px 0 37px 0
+      &__rating
+        margin-bottom: 5px
+      &__title
+        padding: 0
+      &__person-room
+        margin-bottom: 37pxs
+  &__image
+    border-radius: 8px 8px 0px 0px
+    height: 250px
+  &__flash-offer
+    position: absolute
+    left: 0
+    top: 30px
+    color: $light
+    background: $primary
+    padding: 4px 9px
+    font-weight: 600
+    font-size: 8px
+    line-height: 10px
+    border-radius: 0px 4px 4px 0px
+  &__about
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    padding: 30px 21px 30px 25px
+    border-radius: 0px 0px 8px 8px
+    background: $dark
+    color: $light
+  &__title
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    padding-bottom: 23px
+  &__person-room
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    font-size: 12px
+    line-height: 15px
+    margin-bottom: 24px
+    &_address
+      padding-bottom: 11px
+    &_guests
+      padding-bottom: 11px
+    & img
+      margin-right: 14px
+  &__bottom
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    width: 100%
+    &_cost
+      display: flex
+      flex-direction: column
+.bottom-cost
+  &_old
+    font-size: 14px
+    line-height: 18px
+    text-decoration-line: line-through
+    margin-bottom: 5px
+  &_new
+    font-weight: bold
+    font-size: 24px
+    line-height: 30px
+  &_button
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    color: $light
+    padding: 10px 26px
+    background: $primary
+    border-radius: 4px

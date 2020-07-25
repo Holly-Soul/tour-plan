@@ -1127,6 +1127,219 @@ template {
   background: #EC1F46;
 }
 
+.other {
+  padding-bottom: 70px;
+}
+
+.other__title {
+  color: #0A223D;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 65px;
+}
+
+.other-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (350px)[3];
+      grid-template-columns: repeat(3, 350px);
+  -ms-grid-rows: 500px 500px;
+      grid-template-rows: 500px 500px;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.other-grid__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.other-grid__card:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.grid-card {
+  position: relative;
+}
+
+.grid-card:first-child .grid-card__flash-offer {
+  position: absolute;
+  left: 0;
+  top: 34px;
+  color: #fff;
+  background: #EC1F46;
+  padding: 8px 11px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.grid-card:first-child .grid-card__image {
+  width: 366px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.grid-card:first-child .grid-card__about {
+  padding: 46px 21px 30px 44px;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.grid-card:first-child .grid-card__text {
+  font-size: 14px;
+  line-height: 160.6%;
+  margin: 34px 0 37px 0;
+}
+
+.grid-card:first-child .grid-card__rating {
+  margin-bottom: 5px;
+}
+
+.grid-card:first-child .grid-card__title {
+  padding: 0;
+}
+
+.grid-card:first-child .grid-card__person-room {
+  margin-bottom: 37pxs;
+}
+
+.grid-card__image {
+  border-radius: 8px 8px 0px 0px;
+  height: 250px;
+}
+
+.grid-card__flash-offer {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  color: #fff;
+  background: #EC1F46;
+  padding: 4px 9px;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.grid-card__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 30px 21px 30px 25px;
+  border-radius: 0px 0px 8px 8px;
+  background: #0A223D;
+  color: #fff;
+}
+
+.grid-card__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  padding-bottom: 23px;
+}
+
+.grid-card__person-room {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 24px;
+}
+
+.grid-card__person-room_address {
+  padding-bottom: 11px;
+}
+
+.grid-card__person-room_guests {
+  padding-bottom: 11px;
+}
+
+.grid-card__person-room img {
+  margin-right: 14px;
+}
+
+.grid-card__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.grid-card__bottom_cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bottom-cost_old {
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  margin-bottom: 5px;
+}
+
+.bottom-cost_new {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.bottom-cost_button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #fff;
+  padding: 10px 26px;
+  background: #EC1F46;
+  border-radius: 4px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
