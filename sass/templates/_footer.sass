@@ -22,7 +22,6 @@
     &-network
       display: flex
       align-content: center
-      margin-top: -40px
       grid-row: 2 / 4
       grid-column: 3 / 5
   &__contact
@@ -82,6 +81,7 @@
     border: none
     flex-basis: 100%
     margin-bottom: 23px
+    resize: none
   &__button
     min-width: 160px
     min-height: 50px
@@ -97,3 +97,19 @@
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
+  &__bottom
+    margin-top: 100px
+    padding-bottom: 50px
+    position: relative
+    display: flex
+    justify-content: center
+    padding-top: 10px
+    &_img
+      position: absolute
+      right: 0
+.bottom-info
+  &__text
+    color: $light
+    font-size: 12px
+    line-height: 15px
+    margin-right: 10px
