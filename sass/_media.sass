@@ -71,7 +71,7 @@
     height: 225px
   .other
     &-grid 
-      grid-template-columns: repeat(2,350px)
+      grid-template-columns: repeat(2,1fr)
       grid-column-gap: 20px
       grid-row-gap: 20px
       justify-content: center
@@ -108,9 +108,41 @@
   .container
     max-width: 576px
     width: 92%
+  body
+    padding-top: 78px
   .navbar
-    &__search, &-menu, &__user
+    &-bottom
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 78px
+      padding-top: 30px
+      &_visible
+        display: block
+    &__user, &__search
+      &_mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
+    &__user
+      flex-direction: column
+    &_mobile
+      &_fixed
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        z-index: 10000
+    &-menu
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
+        &_mobile
+          &_visible
+            display: block
   .menu
     &-button 
       display: flex
@@ -127,6 +159,12 @@
         height: 1px
         background-color: $text-color
         margin-bottom: 3px
+  .user
+    &__name
+      &_light
+        color: $light
+        margin: 0 
+        margin-top: 20px
   .stars
     flex-basis: auto
   .hotel
@@ -363,6 +401,11 @@
         grid-row: 7
         grid-column: 1
   @media (max-width: 420px) and (min-width: 319px)
+    .navbar
+      &__search
+        &_mobile
+          &_visible
+            width: 260px
     .slider
       width: 100%
       height: 180px

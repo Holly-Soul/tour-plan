@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar_mobile_fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
@@ -21,8 +21,10 @@
               class="logo__image"
             />
           </a>
-
-          <form action="#" class="search navbar__search">
+          <form
+            action="#"
+            class="search navbar__search navbar__search_mobile_hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -32,8 +34,7 @@
               <img src="img/search-icon.svg" alt="icon : search " />
             </button>
           </form>
-
-          <a href="#" class="user navbar__user">
+          <a href="#" class="user navbar__user navbar__user_mobile_hidden">
             <img
               src="img/user-avatar.jpg"
               alt="avatar : Nathan"
@@ -53,6 +54,33 @@
       <div class="navbar-bottom">
         <div class="container">
           <ul class="navbar-menu">
+            <li class="navbar-menu__item navbar-menu__item_mobile_visible">
+              <a href="#" class="user navbar__user navbar__user_mobile_visible">
+                <img
+                  src="img/user-avatar.jpg"
+                  alt="avatar : Nathan"
+                  class="user__avatar"
+                />
+                <span class="user__name user__name_light">
+                  Nathan
+                </span>
+              </a>
+            </li>
+            <li class="navbar-menu__item navbar-menu__item_mobile_visible">
+              <form
+                action="#"
+                class="search navbar__search navbar__search_mobile_visible"
+              >
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Search Location"
+                />
+                <button class="search__button">
+                  <img src="img/search-icon.svg" alt="icon : search " />
+                </button>
+              </form>
+            </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link">All Deals</a>
             </li>
