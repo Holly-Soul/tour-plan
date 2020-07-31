@@ -6,16 +6,48 @@ $(document).ready(function () {
     adaptiveHeight: true,
     infinite: true,
   });
-});
-$(document).ready(function () {
+
   $(".reviews-slider").slick({
     autoplay: true,
   });
-});
 
-let menuButton = document.querySelector(".menu-button");
-menuButton.addEventListener("click", function () {
-  document
-    .querySelector(".navbar-bottom")
-    .classList.toggle("navbar-bottom_visible");
+  let menuButton = $(".menu-button");
+  menuButton.on("click", function () {
+    $(".navbar-bottom").toggleClass("navbar-bottom_visible");
+  });
+
+  let modalButton = $('[data-toggle="modal"]');
+  let closeModalButton = $(".modal__close");
+  modalButton.on("click", openModal);
+  closeModalButton.on("click", closeModal);
+
+  function openModal() {
+    let modalOverlay = $(".modal__overlay");
+    let modalDialog = $(".modal__dialog");
+    let bodyLock = $("body");
+    modalOverlay.addClass("modal__overlay_visible");
+    modalDialog.addClass("modal__dialog_visible");
+    bodyLock.addClass("body__lock");
+  }
+
+  function closeModal(event) {
+    event.preventDefault();
+    let modalOverlay = $(".modal__overlay");
+    let modalDialog = $(".modal__dialog");
+    let bodyLock = $("body");
+    modalOverlay.removeClass("modal__overlay_visible");
+    modalDialog.removeClass("modal__dialog_visible");
+    bodyLock.removeClass("body__lock");
+  }
+
+  document.onkeydown = function closeModalOnKey(e) {
+    if (e.keyCode == "27") {
+      let modalOverlay = $(".modal__overlay");
+      let modalDialog = $(".modal__dialog");
+      let bodyLock = $("body");
+      modalOverlay.removeClass("modal__overlay_visible");
+      modalDialog.removeClass("modal__dialog_visible");
+      bodyLock.removeClass("body__lock");
+    }
+  };
 });
