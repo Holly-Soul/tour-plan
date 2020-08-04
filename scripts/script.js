@@ -50,4 +50,17 @@ $(document).ready(function () {
       bodyLock.removeClass("body__lock");
     }
   };
+  $('.form').each(function(){
+    $(this).validate({
+      errorClass:"invalid",
+      messages:{
+        name:{
+          required:"Укажите имя",
+        },
+        phone:{
+          required:"Укажите телефон",
+        },
+      }
+    })
+  })
 });
