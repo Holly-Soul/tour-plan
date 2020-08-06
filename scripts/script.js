@@ -50,4 +50,20 @@ $(document).ready(function () {
       bodyLock.removeClass("body__lock");
     }
   };
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Tne name is required",
+        },
+        email: {
+          required: "The email address is required",
+        },
+        phone: {
+          required: "The phone number is required",
+        },
+      },
+    });
+  });
 });

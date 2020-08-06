@@ -25,7 +25,8 @@
       height: 240px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
 @media (max-width: 992px)
   .container, .newslatter-wrapper
     max-width: 700px
@@ -79,8 +80,6 @@
     &-wrapper
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
-    &__input
-      flex-basis: 100%
     &__logo
       grid-row: 1 / 2
       grid-column: span 2
@@ -223,7 +222,6 @@
       &__item
         width: 580px
         height: 300px
-        margin-right: 20px
         &_text
           width: 455px
           font-size: 12px
@@ -362,13 +360,13 @@
     &-title
       font-size: 26px
       line-height: 32px
+      margin-bottom: 40px
     &-slider
       &__item
         width: 500px
         height: 280px
-        margin-right: 30px
         &_text
-          width: 420px
+          width: 90%
           font-size: 12px
   .activities
     &__title
@@ -381,7 +379,7 @@
       width: 100%
   .footer
     &-wrapper
-      grid-template-columns: 1fr
+      grid-template-columns: 300px
     &__logo
       grid-row: 1
       grid-column: 1
@@ -426,20 +424,23 @@
       &-title
         font-size: 20px
         line-height: 26px
+        margin-bottom: 30px
       &-slider
         &__item
           width: 281px
-          margin-right: 30px
           height: 100%
           &_user
+            margin: 10px auto 20px
             &__avatar
               margin-top: -50px
           &_text
             width: 219px
-            margin-top: 50px
+            margin-top: 20px
           &_user
             margin-bottom: 0
     .footer
+      &-wrapper
+        min-width: 300px
       &__bottom
         &_img
           right: 30%
